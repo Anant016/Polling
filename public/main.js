@@ -1,5 +1,6 @@
 
 const form=document.getElementById('form');
+var event;
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -76,6 +77,9 @@ if(chart){
        dataPoints=dataPoints.map(x=>{
            if(x.label==data.food){
                x.y+=data.points;
+               event = new CustomEvent('votesAdded',{detail:{totalVotes:totalVotes}});
+                        // Dispatch the event.
+                    document.dispatchEvent(event);
                return x;
            }
            else{
