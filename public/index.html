@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polling</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+     <h1>What do you love the most?</h1>
+     <p>Vote for your favourite Food.</p>
+     <form id="form">
+       <p>
+        <label for="fries">
+           <input id="fries" name="food" value="Fries" type="radio" />
+           <span>Fries</span>
+         </label>
+        </p>
+        <p>
+        <label for="pizza">
+           <input id="pizza" value="Pizza" name="food" type="radio" />
+           <span>Pizza</span>
+         </label>
+        </p>
+        <p>
+        <label for="chaap">
+           <input id="chaap" name="food" value="Chaap" type="radio" />
+           <span>Chaap</span>
+         </label>
+        </p>
+        <p>
+        <label for="paasta">
+           <input id="paasta" name="food"value="Paasta" type="radio" />
+           <span>Paasta</span>
+         </label>
+        </p>
+        <p>
+        <label for="momos">
+           <input id="momos" name="food"value="Momos" type="radio" />
+           <span>Momos</span>
+         </label>
+        </p>
+        <input type="submit" class="btn" Value="vote">
+      </form>
+      <br>
+      <br>
+      <div id="chart" style="height: 300px;width: 100%">
+
+      </div>
+    </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+  <script src="main.js"></script>
+    </body>
+</html>
